@@ -1,0 +1,56 @@
+body {
+    height: 1500px;
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 700px;
+    height: 500px;
+    position: relative;
+}
+
+.container__greenbox {
+    width: 100px;
+    height: 40px;
+    background-color: #badc58;
+    position: absolute;
+    top: 50px;
+    right: 160px;
+}
+
+.container__topbar {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(255, 121, 121);
+    position: static;
+}
+
+.container__bottom{
+    width: 100%;
+    height: 430px;
+    position: relative; /* container__bottom__bluebox,container__bottom__yellowbox 의 부모 박스*/
+}
+
+.container__bottom__bluebox {
+    width: 400px;
+    height: 330px;
+    background-color: #7ed6df;
+    color: white;
+    padding: 50px;
+    position: absolute;
+    left: 0;
+}
+
+.container__bottom__yellowbox {
+    width: 200px;
+    height: 420px;
+    background-color: #ffcc00;
+    border: 5px solid grey;
+    position: absolute;
+    right: 0;
+}
