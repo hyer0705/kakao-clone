@@ -8,6 +8,18 @@ h1 {
     margin: 0;
 }
 
+.container{
+    width: 1000px;
+    height: 800px;
+    position: relative;
+}
+
+.container__redbar{
+    width: 100%;
+    position: fixed;
+}
+
+/*
 .container {
     width: 700px;
     height: 500px;
@@ -54,4 +66,4 @@ h1 {
     border: 5px solid grey;
     position: absolute;
     right: 0;
-}
+}*/
