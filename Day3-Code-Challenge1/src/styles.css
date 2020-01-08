@@ -27,13 +27,14 @@ h1 {
     width: 100%;
     height: 70px;
     background-color: rgb(255, 121, 121);
-    position: static;
+    position: fixed;
 }
 
 .container__bottom{
     width: 100%;
     height: 430px;
-    position: relative; /* container__bottom__bluebox,container__bottom__yellowbox 의 부모 박스*/
+    position: absolute; /* container__bottom__bluebox,container__bottom__yellowbox 의 부모 박스*/
+    bottom: 0;
 }
 
 .container__bottom__bluebox {
