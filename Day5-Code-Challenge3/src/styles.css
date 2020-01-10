@@ -14,17 +14,15 @@ body,html {
     justify-content: center;
     align-items: center;
 }
-.container:hover .container__greybox{
+.container__greybox:hover{
     background-color: #95a5a6;
     box-shadow: 2px 2px 2px 1px #d2d2d2;
 }
 
-.container:hover .container__img{
+.container__greybox:hover + .container__img{
     transform: rotate(125deg) scale(.5, .5);
     border: 5px solid black;
 }
-
-
 
 .container__greybox{
     width: 200px;
