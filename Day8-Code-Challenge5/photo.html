@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>photo | Day8 Code Challenge</title>
+</head>
+
+<body>
+
+    <!-- 사진 보여주는 곳 + 다른사람들의 댓글을 볼 수 있는 곳 -->
+    <main class="photos">
+        <ul class="photos__list">
+            <li class="photos__photo photo">
+
+                <!-- username, time stamp, ellipsis -->
+                <div class="photo__column desc">
+                    <div class="desc__column">
+                        <a href="index.html">
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
+                        <img class="desc__avatar g-avatar" src="images/avatar3.jpg" alt="avatar1">
+                        <span class="desc__username">Sam Martin</span>
+                        <span class="desc__timestamp">5 min</span>
+                    </div>
+                    <div class="desc__column">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+
+                <!-- uploaded photo -->
+                <div class="photo__column">
+                    <img class="photo__uploaded" src="images/avatar2.jpg">
+                </div>
+                <div class="photo__column">
+                    <div class="desc__column">
+                        <i class="far fa-heart"></i>
+                        <span class="desc__heart">2,515</span>
+                        <i class="far fa-comment-alt"></i>
+                        <span class="desc__comment">350</span>
+                    </div>
+                    <div class="desc__column">
+                        <i class="far fa-bookmark"></i>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <!-- 다른 사람들의 댓글을 볼 수 있는 곳 -->
+        <ul class="photos__comment">
+            <li class="incoming-comment comment">
+                <img class="g-avatar comment__avatar" src="images/avatar4.jpg">
+                <div class="comment__content">
+                    <span class="comment__author">Angel</span>
+                    <span class="comment__desc">Looks so good that I can't control my self over this.</span>
+                    <div class="comment__etc">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-share"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="incoming-comment comment">
+                <img class="g-avatar comment__avatar" src="images/avatar4.jpg">
+                <div class="comment__content">
+                    <span class="comment__author">Charlie</span>
+                    <span class="comment__desc">Waiting more from you.</span>
+                    <div class="comment__etc">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-share"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="incoming-comment comment">
+                <img class="g-avatar comment__avatar" src="images/avatar4.jpg">
+                <div class="comment__content">
+                    <span class="comment__author">Angelina Martin</span>
+                    <span class="comment__desc">New collection is great!!!</span>
+                    <div class="comment__etc">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-share"></i>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    <!-- user가 댓글 쓰는 곳 -->
+    <div class="photo__comment-write">
+        <div class="photo__comment-write-column">
+            <img class="photo__comment-write-avatar g-avatar" src="images/avatar.jpg" alt="avatar">
+            <input class="photo__comment-write-input" type="text" placeholder="Add a comment">
+            <i class="far fa-paper-plane"></i>
+        </div>
+    </div>
+</body>
+
+</html>
