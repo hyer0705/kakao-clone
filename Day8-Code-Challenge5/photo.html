@@ -14,41 +14,39 @@
 
     <!-- 사진 보여주는 곳 + 다른사람들의 댓글을 볼 수 있는 곳 -->
     <main class="photos">
-        <ul class="photos__list">
-            <li class="photos__photo photo">
+        <div class="photos__photo photo">
 
-                <!-- username, time stamp, ellipsis -->
-                <div class="photo__column desc">
-                    <div class="desc__column">
-                        <a href="index.html">
-                            <i class="fas fa-arrow-left"></i>
-                        </a>
-                        <img class="desc__avatar g-avatar" src="images/avatar5.jpg" alt="avatar1">
-                        <span class="desc__username">Sam Martin</span>
-                        <span class="desc__timestamp">5 min</span>
-                    </div>
-                    <div class="desc__column">
-                        <i class="fas fa-ellipsis-h"></i>
-                    </div>
+            <!-- username, time stamp, ellipsis -->
+            <div class="photo__column desc">
+                <div class="desc__column">
+                    <a href="index.html">
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                    <img class="desc__avatar g-avatar" src="images/avatar5.jpg" alt="avatar1">
+                    <span class="desc__username">Sam Martin</span>
+                    <span class="desc__timestamp">5 min</span>
                 </div>
+                <div class="desc__column">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
 
-                <!-- uploaded photo -->
-                <div class="photo__column">
-                    <img class="photo__uploaded" src="images/upload_photo.jpg">
+            <!-- uploaded photo -->
+            <div class="photo__column">
+                <img class="photo__uploaded" src="images/upload_photo.jpg">
+            </div>
+            <div class="photo__column">
+                <div class="desc__column">
+                    <i class="far fa-heart"></i>
+                    <span class="desc__heart">2,515</span>
+                    <i class="far fa-comment-alt"></i>
+                    <span class="desc__comment">350</span>
                 </div>
-                <div class="photo__column">
-                    <div class="desc__column">
-                        <i class="far fa-heart"></i>
-                        <span class="desc__heart">2,515</span>
-                        <i class="far fa-comment-alt"></i>
-                        <span class="desc__comment">350</span>
-                    </div>
-                    <div class="desc__column">
-                        <i class="far fa-bookmark"></i>
-                    </div>
+                <div class="desc__column">
+                    <i class="far fa-bookmark"></i>
                 </div>
-            </li>
-        </ul>
+            </div>
+        </div>
 
         <!-- 다른 사람들의 댓글을 볼 수 있는 곳 -->
         <ul class="photos__comment">
