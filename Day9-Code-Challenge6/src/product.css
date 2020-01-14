@@ -43,3 +43,10 @@
     margin-left: 10px;
     opacity: 0.8;
 }
+
+.etc__column .etc__column-star{
+    color: #fdbf4f;
+}
+.etc__column .etc__column-star--grey{
+    opacity: 0.3;
+}
