@@ -56,9 +56,10 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    opacity: 0.6;
   }
   
-  /* Hide the browser's default checkbox */
+  /* 기본 체크박스 없애기 */
   .sign-in__checkbox .checkbox__desc input {
     position: absolute;
     opacity: 0;
@@ -67,47 +68,68 @@
     width: 0;
   }
   
-  /* Create a custom checkbox */
-  .checkbox__checkmark {
+  /* 새롭게 체크 박스 만들기 */
+  .checkmark {
     position: absolute;
-    top: 0;
+    top: auto;
     left: 0;
     height: 15px;
     width: 15px;
-    border: 1px solid #cdcfd8;
+    border: 1px solid black;
+    opacity: 0.7;
     border-radius: 4px;
-    background-color: white;
+    /* background-color: blue; */
   }
+
+  /* check 표시 아이콘으로 넣어주기 */
+.checkbox__desc .fa-check{
+  position: absolute;
+  top: auto;
+  left: 1px;
+  font-size: 10px;
+  color: red;
+}
   
   /* When the checkbox is checked, add a blue background */
-  .checkbox__desc input:checked ~ .checkbox__checkmark {
+  .checkbox__desc input:checked ~ .checkmark {
     background-color: white;
     border: 1px solid grey;
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */
-  .checkbox__checkmark:after {
+  .checkbox__desc .fa-check::before {
     content: "";
-    position: absolute;
     display: none;
   }
   
   /* Show the checkmark when checked */
-  .checkbox__desc input:checked ~ .checkbox__checkmark:after {
-    display: block;
+  .checkbox__desc input:checked ~ .checkmark:after {
+    display: flex;
   }
   
   /* Style the checkmark/indicator */
-  .checkbox__desc .checkbox__checkmark:after {
+  .checkbox__desc .checkmark:after {
     left: 3px;
     top: 0px;
     width: 3px;
     height: 8px;
-    border: solid red;
+    border: solid white;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+  }
+
+  .checkbox__desc input:checked ~ .fa-check:before{
+    display: flex;
+  }
+
+  .checkbox__desc .fa-check:before{
+    content: "\f00c";
+    top: 0px;
+    left: 3px;
+    font-size: 12px;
+    color: red;
   }
   
   .phone__sign-in .sign-in__btn {
