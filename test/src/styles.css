@@ -1,0 +1,87 @@
+
+/* The container */
+.container {
+  width: 50px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* 기본 체크박스 없애기 */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* 새롭게 체크 박스 만들기 */
+.checkmark {
+  position: absolute;
+  top: auto;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border: 1px solid black;
+}
+
+/* check 표시 아이콘으로 넣어주기 */
+.container .fa-check{
+    position: absolute;
+    top: auto;
+    left: 3px;
+    font-size: 15px;
+    color: red;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: white;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.container .fa-check::before{
+  content: "";
+  /* position: absolute; */
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: flex;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.container input:checked ~ .fa-check:before{
+    display: flex;
+}
+
+.container .fa-check:before{
+    content: "\f00c";
+    top: 0px;
+    left: 3px;
+    font-size: 15px;
+    color: red;
+}
