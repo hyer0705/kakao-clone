@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles.css">
+    <title>Day10 | Code Challenge</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="phone">
+            <!-- 맨 위에 타이틀 -->
+            <header class="header">
+                <h1 class="header__title">Sign in</h1>
+            </header>
+
+            <!-- sign in -->
+            <main class="phone__sign-in">
+
+                <!-- email, password -->
+                <div class="sign-in__column">
+                    <input class="sign-in__email" type="email" placeholder="email">
+                    <input class="sign-in__password" type="password" placeholder="password">
+                </div>
+
+                <!-- forgot password link, check box -->
+                <div class="sign-in__column">
+                    <div class="sign-in__forgot">Forgot Password?</div>
+                    <div class="sign-in__checkbox">
+                        <label class="checkbox__desc">
+                            Remember Me
+                            <input type="checkbox">
+                            <span class="checkbox__checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- sign-in button -->
+                <div class="sign-in__btn">
+                    <div>Sign in</div>
+                </div>
+            </main>
+
+            <!-- sign up -->
+            <div class="phone__sign-up">
+
+                <!-- or title -->
+                <div class="sign-up__column">
+                    <span class="sign-up__title">OR</span>
+                </div>
+
+                <!-- sns로 로그인 버튼 -->
+                <div class="sign-up__column">
+                    <div class="column__box">
+                        <div class="sign-up__sns-btn">Facebook</div>
+                        <div class="sign-up__sns-btn">Twitter</div>
+                    </div>
+                </div>
+
+                <!-- sign up or retrive 공간 -->
+                <div class="sign-up__column">
+                    <div class="sign-up__link">
+                        <span class="sign-link__desc">need an account? </span>
+                        <span class="sign-link__link">Sign up</span>
+                    </div>
+
+                    <div class="sign-up__link">
+                        <span class="sign-link__desc">forgot your password? </span>
+                        <span class="sign-link__link">Retrive</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

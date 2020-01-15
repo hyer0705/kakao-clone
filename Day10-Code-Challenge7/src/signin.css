@@ -1,0 +1,216 @@
+.phone .phone__sign-in{
+    /* background-color: aqua; */
+    width: 100%;
+    padding-top: 30px;
+    /* margin-bottom: 35px; */
+}
+
+.phone .sign-in__column{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.phone .sign-in__column:nth-child(2){
+    margin-bottom: 45px;
+}
+
+.sign-in__column input[type="email"],
+.sign-in__column input[type="password"]{
+    margin-bottom: 20px;
+    padding: 18px 10px;
+    width: 100%;
+    height: 30px;
+    line-height: normal;
+    font-family: inherit;
+    border: 1px solid #cdcfd8;
+    outline-style: none;
+    border-radius: 5px;
+}
+
+.sign-in__column .sign-in__forgot{
+    font-size: 11px;
+    color: #ed5050;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.sign-in__column .sign-in__checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* .checkbox__desc => label, checkbox css*/
+.sign-in__checkbox .checkbox__desc {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 1px 0px 1px 20px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .sign-in__checkbox .checkbox__desc input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkbox__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #cdcfd8;
+    border-radius: 4px;
+    background-color: white;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .checkbox__desc input:checked ~ .checkbox__checkmark {
+    background-color: white;
+    border: 1px solid grey;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkbox__checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .checkbox__desc input:checked ~ .checkbox__checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .checkbox__desc .checkbox__checkmark:after {
+    left: 3px;
+    top: 0px;
+    width: 3px;
+    height: 8px;
+    border: solid red;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+/* .sign-in__checkbox .checkbox__desc{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+
+    position: relative;
+}
+
+.sign-in__checkbox .checkbox__desc > span{
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.sign-in__checkbox .checkbox__desc > input{
+    height: 16px;
+    width: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    outline-style: none;
+    border: 1px solid #cdcfd8;
+    border-radius: 4px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    background-color: white;
+}
+
+.sign-in__checkbox .checkbox__desc > input:checked + span::before{
+    content: '\2713';
+    display: block;
+    text-align: center;
+    color: #e2283e;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.3rem;
+} */
+
+.phone__sign-in .sign-in__btn{
+    margin-top: 25px;
+    width: 100%;
+    height: 40px;
+    background-color: #e2283e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.phone__sign-up .sign-up__column{
+    margin-top: 35px;
+}
+
+.sign-up__column .sign-up__title{
+    font-size: 13px;
+    font-weight: 700;
+    opacity: 0.9;
+}
+
+.sign-up__column .column__box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sign-up__column .sign-up__sns-btn{
+    width: 45%;
+    background-color: #485995;
+    padding: 10px 30px;
+    color: white;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.sign-up__column .sign-up__sns-btn:last-child{
+    background-color: #5da1f2;
+}
+
+.sign-up__column .sign-up__link{
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.sign-up__link .sign-link__desc{
+    opacity: 0.5;
+    margin-right: 5px;
+}
+
+.sign-up__link .sign-link__link{
+    color: #ed5050;
+    cursor: pointer;
+}
