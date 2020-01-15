@@ -1,22 +1,22 @@
-.phone .phone__sign-in{
+.phone .phone__sign-in {
     /* background-color: aqua; */
     width: 100%;
     padding-top: 30px;
     /* margin-bottom: 35px; */
-}
-
-.phone .sign-in__column{
+  }
+  
+  .phone .sign-in__column {
     display: flex;
     flex-direction: column;
     margin-bottom: 25px;
-}
-
-.phone .sign-in__column:nth-child(2){
+  }
+  
+  .phone .sign-in__column:nth-child(2) {
     margin-bottom: 45px;
-}
-
-.sign-in__column input[type="email"],
-.sign-in__column input[type="password"]{
+  }
+  
+  .sign-in__column input[type="email"],
+  .sign-in__column input[type="password"] {
     margin-bottom: 20px;
     padding: 18px 10px;
     width: 100%;
@@ -26,25 +26,25 @@
     border: 1px solid #cdcfd8;
     outline-style: none;
     border-radius: 5px;
-}
-
-.sign-in__column .sign-in__forgot{
+  }
+  
+  .sign-in__column .sign-in__forgot {
     font-size: 11px;
     color: #ed5050;
     margin-bottom: 20px;
     display: flex;
     justify-content: flex-end;
     cursor: pointer;
-}
-
-.sign-in__column .sign-in__checkbox{
+  }
+  
+  .sign-in__column .sign-in__checkbox {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-}
-
-/* .checkbox__desc => label, checkbox css*/
-.sign-in__checkbox .checkbox__desc {
+  }
+  
+  /* .checkbox__desc => label, checkbox css*/
+  .sign-in__checkbox .checkbox__desc {
     display: inline-block;
     justify-content: center;
     align-items: center;
@@ -109,46 +109,8 @@
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-/* .sign-in__checkbox .checkbox__desc{
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
-
-    position: relative;
-}
-
-.sign-in__checkbox .checkbox__desc > span{
-    font-size: 12px;
-    font-weight: 400;
-    opacity: 0.5;
-}
-
-.sign-in__checkbox .checkbox__desc > input{
-    height: 16px;
-    width: 16px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-    outline-style: none;
-    border: 1px solid #cdcfd8;
-    border-radius: 4px;
-    transition-duration: 0.3s;
-    cursor: pointer;
-    background-color: white;
-}
-
-.sign-in__checkbox .checkbox__desc > input:checked + span::before{
-    content: '\2713';
-    display: block;
-    text-align: center;
-    color: #e2283e;
-    position: absolute;
-    left: 0.5rem;
-    top: 0.3rem;
-} */
-
-.phone__sign-in .sign-in__btn{
+  
+  .phone__sign-in .sign-in__btn {
     margin-top: 25px;
     width: 100%;
     height: 40px;
@@ -161,26 +123,26 @@
     font-weight: 400;
     border-radius: 20px;
     cursor: pointer;
-}
-
-.phone__sign-up .sign-up__column{
+  }
+  
+  .phone__sign-up .sign-up__column {
     margin-top: 35px;
-}
-
-.sign-up__column .sign-up__title{
+  }
+  
+  .sign-up__column .sign-up__title {
     font-size: 13px;
     font-weight: 700;
     opacity: 0.9;
-}
-
-.sign-up__column .column__box{
+  }
+  
+  .sign-up__column .column__box {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.sign-up__column .sign-up__sns-btn{
+  }
+  
+  .sign-up__column .sign-up__sns-btn {
     width: 45%;
     background-color: #485995;
     padding: 10px 30px;
@@ -191,26 +153,27 @@
     align-items: center;
     border-radius: 20px;
     cursor: pointer;
-}
-
-.sign-up__column .sign-up__sns-btn:last-child{
+  }
+  
+  .sign-up__column .sign-up__sns-btn:last-child {
     background-color: #5da1f2;
-}
-
-.sign-up__column .sign-up__link{
+  }
+  
+  .sign-up__column .sign-up__link {
     width: 100%;
     margin-bottom: 15px;
     font-size: 13px;
     font-weight: 500;
     display: inline-block;
-}
-
-.sign-up__link .sign-link__desc{
+  }
+  
+  .sign-up__link .sign-link__desc {
     opacity: 0.5;
     margin-right: 5px;
-}
-
-.sign-up__link .sign-link__link{
+  }
+  
+  .sign-up__link .sign-link__link {
     color: #ed5050;
     cursor: pointer;
-}
+  }
+  
