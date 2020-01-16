@@ -1,0 +1,27 @@
+.phone__top .top__photos{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+}
+
+.top__photos .photos__box{
+    width: 45px;
+    height: 45px;
+    background-color: lightcoral;
+    margin-left: 10px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top__photos .photos__box:last-child{
+    background-color: #3f67ff;
+    color: white;
+}
+
+.photos__box img{
+    width: 45px;
+    height: 45px;
+    border-radius: 7px;
+}
