@@ -30,8 +30,9 @@
     background-color: white;
     padding: 5px;
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(16,14,23,.2);
+    box-shadow: 0 0 10px rgba(16,14,23,0.5);
     color: red;
+    /* opacity: 0.5; */
     cursor: pointer;
 }
 

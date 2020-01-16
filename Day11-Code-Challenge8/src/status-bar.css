@@ -6,6 +6,10 @@
     margin-bottom: 30px;
 }
 
+.phone__top .top__status-bar i{
+    margin-right: 3px;
+}
+
 .top__status-bar .status-bar__column{
     font-size: 14px;
 }
