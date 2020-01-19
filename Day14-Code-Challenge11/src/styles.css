@@ -84,20 +84,23 @@ body{
 }
 
 .camera-box__column .box__title,
-.safari-box__column .box__title{
+.safari-box__column .box__title,
+.game-box__column .box__title{
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
 .camera-box__column .box__desc,
-.safari-box__column .box__desc{
+.safari-box__column .box__desc,
+.game-box__column .box__desc{
     font-size: 14px;
     color: #e84167;
 }
 
 .camera-box__column .box__btn,
-.safari-box__column .box__btn{
+.safari-box__column .box__btn,
+.game-box__column .box__btn{
     text-align: center;
     background-color: #e84167;
     border-radius: 3px;
@@ -143,4 +146,20 @@ body{
 .containerAni .safari:hover{
     position: relative;
     animation: scaleBox .5s linear forwards;
+}
+
+/* game box */
+.containerAni .containerAni__game-box{
+    width: 330px;
+    height: 100px;
+    padding: 15px 15px;
+    background-color: #273949;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerAni__game-box .game-box__column:last-child{
+    display: flex;
+    align-items: flex-end;
 }
