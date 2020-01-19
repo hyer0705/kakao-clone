@@ -24,6 +24,7 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 /* camera box */
@@ -144,11 +145,29 @@ body{
     justify-content: space-between;
     position: absolute;
     bottom: 50px;
+    z-index: 0;
 }
 
 .containerAni__game-box .game-box__column:last-child{
     display: flex;
     align-items: flex-end;
+}
+
+.containerAni .containerAni__img-box{
+    overflow: hidden;
+    width: 330px;
+    height: 250px;
+}
+
+.containerAni .game-box{
+    position: relative;
+    top: 0px;
+    transition: all ease-in-out 1s 0s;
+}
+
+.containerAni .game-box:hover{
+    position: relative;
+    top: -100px;
 }
 
 /* 애니메이션 트랜지션으로 다 바꿔서 매끄럽게 마우스 올렸을 때랑 땠을 때 부드럽게 움직일 수 있도록 바꾸기 */
