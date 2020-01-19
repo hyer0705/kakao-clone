@@ -48,7 +48,7 @@ body{
 /* image hover */
 .containerAni .containerAni__img:hover ~ .containerAni__camera-box{
     z-index: 2;
-    animation: appearBox 1s linear forwards;
+    animation: appearBox .5s linear forwards;
     cursor: pointer;
 }
 
@@ -104,6 +104,33 @@ body{
     padding: 10px;
 }
 
+@keyframes scaleBox {
+    0%{
+        transform: none;
+        top: 0px;
+    }
+    20%{
+        transform: scale(0.9, 0.9);
+        top: -8px;
+    }
+    40%{
+        transform: scale(0.8, 0.8);
+        top: -16px;
+    }
+    60%{
+        transform: scale(0.7, 0.7);
+        top: -24px;
+    }
+    80%{
+        transform: scale(0.6, 0.6);
+        top: -32px;
+    }
+    100%{
+        top: -40px;
+        transform: scale(0.5, 0.5);
+    }
+}
+
 /* safari box */
 .containerAni .containerAni__safari-box{
     padding: 15px;
@@ -112,10 +139,8 @@ body{
     align-items: flex-end;
 }
 
-/* transform을 다양하게 쓰고 싶다면 transition을 이용해 보자 */
-.containerAni .safari{
-    transform: scale(0.6, 0.6);
-    position: absolute;
-    top: 25px;
-    /* transition: scale(0.6, 0.6) 1s, translateY(0px); */
+/* y축 위쪽으로 줄어들게끔 생각해보기 */
+.containerAni .safari:hover{
+    position: relative;
+    animation: scaleBox .5s linear forwards;
 }
