@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
 @import "reset.css";
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     width: 100%;
     display: flex;
@@ -22,21 +26,51 @@ body{
     position: relative;
 }
 
-.containerAni .containerAni__box{
+/* camera box */
+
+/* camera box가 나타나는 애니메이션 */
+@keyframes appearBox{
+    from{
+        transform: none;
+    }
+    to{
+        transform: translate(20px, 20px);
+    }
+}
+
+.containerAni .containerAni__img{
     width: 330px;
     height: 250px;
+    position: relative;
+    z-index: 1;
+}
+
+/* image hover */
+.containerAni .containerAni__img:hover ~ .containerAni__camera-box{
+    z-index: 2;
+    animation: appearBox 1s linear forwards;
+    cursor: pointer;
 }
 
 .containerAni .containerAni__camera-box{
-    width: 330px;
-    height: 250px;
-    background-color: #273949;
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+.containerAni .containerAni__camera-box,
+.containerAni .containerAni__safari-box{
+    width: 330px;
+    height: 250px;
+    background-color: #273949;
+    color: white;
+    position: absolute;
+    top: 50px;
+    z-index: 0;
+}
+
+
 
 .containerAni__camera-box .camera-box__column{
     display: flex;
@@ -49,19 +83,39 @@ body{
     margin-bottom: 30px;
 }
 
-.camera-box__column .box__title{
+.camera-box__column .box__title,
+.safari-box__column .box__title{
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-.camera-box__column .box__desc{
+.camera-box__column .box__desc,
+.safari-box__column .box__desc{
     font-size: 14px;
     color: #e84167;
 }
 
-.camera-box__column .box__btn{
+.camera-box__column .box__btn,
+.safari-box__column .box__btn{
+    text-align: center;
     background-color: #e84167;
     border-radius: 3px;
     padding: 10px;
+}
+
+/* safari box */
+.containerAni .containerAni__safari-box{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* transform을 다양하게 쓰고 싶다면 transition을 이용해 보자 */
+.containerAni .safari{
+    transform: scale(0.6, 0.6);
+    position: absolute;
+    top: 25px;
+    /* transition: scale(0.6, 0.6) 1s, translateY(0px); */
 }
